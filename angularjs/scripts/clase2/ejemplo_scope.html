@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>Clase 1 - Angular Scope</title>
+
+  <script src="angular.min.1.3.9.js"></script>
+  <script src="invoice_scope.js"></script>
+  <!--<script src="https://code.angularjs.org/1.3.9/angular.min.js"></script>-->
+
+  </head>
+
+  <body>
+
+  	<div ng-app="invoice1" ng-controller="InvoiceController">
+		  <b>Invoice:</b>
+		  <div>
+		    Quantity: <input type="number" min="0" ng-model="qty" required >
+		  </div>
+		  <div>
+		    Costs: <input type="number" min="0" ng-model="cost" required >
+		    <select ng-model="inCurr">
+		      <option ng-repeat="c in currencies">{{c}}</option>
+		    </select>
+		  </div>
+		  <div>
+		    <b>Total:</b>
+		    <span ng-repeat="c in currencies">
+		      {{total(c) | currency:c}}
+		    </span>
+		    <button class="btn" ng-click="pay()">Pay</button>
+		  </div>
+		</div>
+
+   </body>
+
+</html>
