@@ -1,0 +1,5 @@
+<div>
+	<div><img width="100"  height="100" src="{{ info.avatarUrl }}"></div>
+	<div>{{ info.nombre}}</div>
+	<div>{{ info.direccion}}</div>
+</div>
