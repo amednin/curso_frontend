@@ -1,0 +1,33 @@
+<html>
+<!DOCTYPE HTML>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <h1>Blog Maravilloso</h1>
+    </header>
+    <article>
+      <h1>Blog Post</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <aside>
+        <!-- Ya que este aside está contenido dentro de un article, el parseador debería entender que el contenido de aside está directamente relacionado con el article. -->
+        <h1>Glosario</h1>
+        <dl>
+          <dt>Lorem</dt>
+          <dd>ipsum dolor sit amet</dd>
+        </dl>
+      </aside>
+    </article>
+    <aside>
+      <!-- Este aside está fuera del article. Su contenido está relacionado con la página y no con el article. -->
+      <h2>Blogs</h2>
+      <ul>
+        <li><a href="#">Mi amigo</a></li>
+        <li><a href="#">Mi otro amigo</a></li>
+        <li><a href="#">Mi BFF</a></li>
+      </ul>
+    </aside>
+  </body>
+</html>
