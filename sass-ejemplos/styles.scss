@@ -1,0 +1,36 @@
+$colorCabecera: #F53322;
+
+@mixin borderGenerico ($radio) {
+	border-radius: $radio;
+	-webkit-border-radius: $radio;
+	-moz-border-radius: $radio;
+	-ms-border-radius: $radio;
+}
+
+header {
+	color: $colorCabecera;
+}
+
+footer {
+	color: $colorCabecera;
+}
+
+.fondo-azul {
+	background-color: blue-light;
+}
+
+ul {
+	border: 1px solid red;
+	@include borderGenerico(5px);
+
+	li {
+		border: 1px solid blue;
+		@extend .fondo-azul;
+
+		bdi {
+			border: 1px solid green;
+			@include borderGenerico(10px);
+
+		}
+	}
+}

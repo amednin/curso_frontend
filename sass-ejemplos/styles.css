@@ -1,0 +1,25 @@
+header {
+  color: #F53322; }
+
+footer {
+  color: #F53322; }
+
+.fondo-azul, ul li {
+  background-color: blue-light; }
+
+ul {
+  border: 1px solid red;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px; }
+  ul li {
+    border: 1px solid blue; }
+    ul li bdi {
+      border: 1px solid green;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px; }
+
+/*# sourceMappingURL=styles.css.map */
