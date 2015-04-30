@@ -1,0 +1,31 @@
+header {
+	width: 800px;
+	background-color: blue;
+}
+
+header nav li {
+	float:left;
+	list-style: none;
+	margin-right: 10px;
+	background-color: blue;
+}
+
+header nav li a {
+	color: green;
+	text-decoration: none;
+	font-size: 24px;
+}
+
+@media screen and (max-width: 420px) {
+
+	header nav li {
+		float:none;
+	}
+}
+
+@media screen and (max-width: 635px) {
+
+	header nav li a {
+		font-size: 18px;
+	}
+}
