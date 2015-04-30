@@ -12,7 +12,8 @@ ul {
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px; }
+  -ms-border-radius: 5px;
+  width: 360px; }
   ul li {
     border: 1px solid blue; }
     ul li bdi {

@@ -1,4 +1,7 @@
-$colorCabecera: #F53322;
+
+
+@import 'variables';
+
 
 @mixin borderGenerico ($radio) {
 	border-radius: $radio;
@@ -22,6 +25,7 @@ footer {
 ul {
 	border: 1px solid red;
 	@include borderGenerico(5px);
+	width: ($tamScreen * 60) / 100;
 
 	li {
 		border: 1px solid blue;
